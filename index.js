@@ -20,7 +20,7 @@ const severityLevel = core.getInput('severity-level');
         },
         silent: true,
         //ignoreReturnCode: true,
-        cwd : './test'
+        //cwd : './test'
     }
     try{
         await exec.exec('yarn', ['audit', '--level', severityLevel], options);

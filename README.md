@@ -1,23 +1,9 @@
-# Hello world javascript action
-
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
-
-## Inputs
-
-### `who-to-greet`
-
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
+# Yarn Audit Github Action
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-javascript-action@e76147da8e5c81eaf017dede5645551d4b94427b
+uses: GradiusX/yarn-audit-github-action
 with:
-  who-to-greet: 'Mona the Octocat'
+  severity-level: 'critical'
 ```

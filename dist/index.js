@@ -11049,8 +11049,7 @@ const github = __nccwpck_require__(3007);
 const exec = __nccwpck_require__(8812);
 
 // Report only this level and above: info|low|moderate|high|critical
-//const severityLevel = core.getInput('severity-level');
-const severityLevel =  "critical";
+const severityLevel = core.getInput('severity-level');
 
 (async () => {
     let commandOutput = '';
@@ -11067,7 +11066,7 @@ const severityLevel =  "critical";
         },
         silent: true,
         //ignoreReturnCode: true,
-        cwd : './test'
+        //cwd : './test'
     }
     try{
         await exec.exec('yarn', ['audit', '--level', severityLevel], options);
