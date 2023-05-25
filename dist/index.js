@@ -11051,8 +11051,6 @@ const exec = __nccwpck_require__(8812);
 // Report only this level and above: info|low|moderate|high|critical
 const severityLevel = core.getInput('severity-level');
 
-//
-
 (async () => {
     let commandOutput = '';
     let commandError = '';
