@@ -4,7 +4,7 @@
 
 ```yaml
 name: Security Checker
-run-name: Running Security Checker 🚀
+run-name: Running Security Checker
 on:
   push:
     branches: [main]
@@ -17,7 +17,8 @@ jobs:
       - name: Running Yarn Audit on Repo
         id: yarn_audit
         # False = break pipeline if vulns are found; True = continue irrespectively
-        continue-on-error: true
+        continue-on-error: false
+        # Update tag to latest version
         uses: GradiusX/yarn-audit-github-action@v1.5
         with:
           # Report only this level and above (info|low|moderate|high|critical)
