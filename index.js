@@ -5,6 +5,8 @@ const exec = require('@actions/exec');
 // Report only this level and above: info|low|moderate|high|critical
 const severityLevel = core.getInput('severity-level');
 
+//
+
 (async () => {
     let commandOutput = '';
     let commandError = '';
